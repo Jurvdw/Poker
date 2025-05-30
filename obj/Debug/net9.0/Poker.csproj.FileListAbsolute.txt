@@ -1,0 +1,14 @@
+c:\Users\Gebruiker\Downloads\Code\Poker\bin\Debug\net9.0\Poker.exe
+C:\Users\Gebruiker\Downloads\Code\Poker\bin\Debug\net9.0\Poker.deps.json
+C:\Users\Gebruiker\Downloads\Code\Poker\bin\Debug\net9.0\Poker.runtimeconfig.json
+c:\Users\Gebruiker\Downloads\Code\Poker\bin\Debug\net9.0\Poker.dll
+c:\Users\Gebruiker\Downloads\Code\Poker\bin\Debug\net9.0\Poker.pdb
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.AssemblyInfoInputs.cache
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.AssemblyInfo.cs
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.csproj.CoreCompileInputs.cache
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.dll
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\refint\Poker.dll
+c:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.pdb
+C:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\Poker.genruntimeconfig.cache
+C:\Users\Gebruiker\Downloads\Code\Poker\obj\Debug\net9.0\ref\Poker.dll
