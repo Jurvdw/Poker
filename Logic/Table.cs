@@ -1,12 +1,68 @@
-public class Table
+public static class Table
 {
-    public List<Player> players = new List<Player>();
-    public int pot;
-    public List<Card> deck = new List<Card>();
-    public List<Card> Active = new List<Card>();
+    public static List<IPlayable> players = new List<IPlayable>();
+    public static int pot;
+    public static List<Card> deck = CreateDeck();
+    public static List<Card> Active = new List<Card>();
 
-    public Table(List<Player> playerslist)
+
+    public static void ResetTable()
     {
-        players = playerslist;
+
+    }
+
+    public static void DealToPlayers(int Amount)
+    {
+        
+    }
+
+    public static void DealCommunityCards(int Amount)
+    {
+        
+    }
+
+
+
+
+    public static void ShuffleDeck()
+    {
+        Random rng = new Random();
+        int count = deck.Count;
+
+        for (int i = 0; i < count; i++)
+        {
+            int j = rng.Next(count);
+            Card temp = deck[i];
+            deck[i] = deck[j];
+            deck[j] = temp;
+        }
+    }
+
+        static List<Card> CreateDeck()
+    {
+        List<Card> cards = new List<Card>();
+        Dictionary<int, string> suits = new Dictionary<int, string>
+        {
+            { 1, "Hearts" },
+            { 2, "Diamonds" },
+            { 3, "Clubs" },
+            { 4, "Spades" }
+        };
+        string[] values = { "A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+
+        for (int suitId = 1; suitId <= 4; suitId++)
+        {
+            foreach (string value in values)
+            {
+                Card card = new Card(
+                    suits[suitId],
+                    value,
+                    new List<int> { suitId, Array.IndexOf(values, value) + 1 }
+                );
+                cards.Add(card);
+            }
+        }
+
+        return cards;
     }
 }
