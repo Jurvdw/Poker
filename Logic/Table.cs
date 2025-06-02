@@ -19,7 +19,7 @@ public static class Table
         {
             if (!player.Folded)
             {
-                TakeFromDeck(Amount, player);
+                TakeFromDeck(Amount, player.cards);
             }
         }
     }
@@ -28,9 +28,6 @@ public static class Table
     {
 
     }
-
-
-
 
     public static void ShuffleDeck()
     {
@@ -73,12 +70,15 @@ public static class Table
         return cards;
     }
 
-    public static void TakeFromDeck(int amount, IPlayable cardholder)
+    public static void TakeFromDeck(int amount, List<Card> cardlist)
     {
-        Random random = new Random();
-        int rint = random.Next(0, deck.Count);
-        Card chosencard = deck[rint];
-        deck.Remove(chosencard);
-        cardholder.cards.Add(chosencard);
+        for (int i = 0; i < amount; i++)
+        {
+            Random random = new Random();
+            int rint = random.Next(0, deck.Count);
+            Card chosencard = deck[rint];
+            deck.Remove(chosencard);
+            cardlist.Add(chosencard);
+        }
     }
 }

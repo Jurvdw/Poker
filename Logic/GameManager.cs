@@ -7,5 +7,12 @@ static class GameManager
     public static void StartGame(List<IPlayable> players)
     {
         Table.players = players;
+        // betting pre-flop
+        // show 3 cards
+        // betting round
+        // another card
+        // last card
+        // last round
+        // process results
     }
 }
