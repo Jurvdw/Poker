@@ -4,6 +4,7 @@ public class Player : IPlayable
     public int Balance;
     public int Buy_in { get; set; }
     public bool Folded { get; set; }
+    public List<Card> cards { get; set; }
 
     public Player(string name)
     {
@@ -12,8 +13,11 @@ public class Player : IPlayable
         Name = name;
     }
 
-    public void Bet(int amount)
+    public int Bet(int amount)
     {
+        // bettingmenu
         Buy_in = -amount;
+        int betamount = 100;
+        return betamount;
     }
 }

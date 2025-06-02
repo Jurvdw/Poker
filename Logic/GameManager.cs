@@ -6,6 +6,6 @@ static class GameManager
 
     public static void StartGame(List<IPlayable> players)
     {
-
+        Table.players = players;
     }
 }

@@ -1,3 +1,5 @@
+using System.Data;
+
 public static class Table
 {
     public static List<IPlayable> players = new List<IPlayable>();
@@ -13,12 +15,18 @@ public static class Table
 
     public static void DealToPlayers(int Amount)
     {
-        
+        foreach (IPlayable player in players)
+        {
+            if (!player.Folded)
+            {
+                TakeFromDeck(Amount, player);
+            }
+        }
     }
 
     public static void DealCommunityCards(int Amount)
     {
-        
+
     }
 
 
@@ -38,7 +46,7 @@ public static class Table
         }
     }
 
-        static List<Card> CreateDeck()
+    static List<Card> CreateDeck()
     {
         List<Card> cards = new List<Card>();
         Dictionary<int, string> suits = new Dictionary<int, string>
@@ -62,7 +70,15 @@ public static class Table
                 cards.Add(card);
             }
         }
-
         return cards;
+    }
+
+    public static void TakeFromDeck(int amount, IPlayable cardholder)
+    {
+        Random random = new Random();
+        int rint = random.Next(0, deck.Count);
+        Card chosencard = deck[rint];
+        deck.Remove(chosencard);
+        cardholder.cards.Add(chosencard);
     }
 }
