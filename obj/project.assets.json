@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jurvd\\.nuget\\packages\\": {}
+    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jurvd\\Documents\\Informatica\\Code\\Poker\\Poker.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Downloads\\Code\\Poker\\Poker.csproj",
       "projectName": "Poker",
-      "projectPath": "C:\\Users\\jurvd\\Documents\\Informatica\\Code\\Poker\\Poker.csproj",
-      "packagesPath": "C:\\Users\\jurvd\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jurvd\\Documents\\Informatica\\Code\\Poker\\obj\\",
+      "projectPath": "C:\\Users\\Gebruiker\\Downloads\\Code\\Poker\\Poker.csproj",
+      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Downloads\\Code\\Poker\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jurvd\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
