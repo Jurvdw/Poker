@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Data;
 
 public static class Table
@@ -7,10 +8,12 @@ public static class Table
     public static List<Card> deck = CreateDeck();
     public static List<Card> Active = new List<Card>();
 
-
     public static void ResetTable()
     {
-
+        foreach (Player player in players)
+        {
+            
+        }
     }
 
     public static void DealToPlayers(int Amount)
@@ -26,7 +29,7 @@ public static class Table
 
     public static void DealCommunityCards(int Amount)
     {
-
+        TakeFromDeck(Amount, Active);
     }
 
     public static void ShuffleDeck()
@@ -79,6 +82,20 @@ public static class Table
             Card chosencard = deck[rint];
             deck.Remove(chosencard);
             cardlist.Add(chosencard);
+        }
+    }
+
+    public static void TakeFromDeckList(List<Card> cardlist)
+    {
+        List<Card> cardstoremove = new List<Card>();
+        foreach (Card card in cardlist)
+        {
+            deck.Add(card);
+            cardstoremove.Add(card);
+        }
+        foreach (Card card in cardstoremove)
+        {
+            cardlist.Remove(card);
         }
     }
 }
